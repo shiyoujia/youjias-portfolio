@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -31,3 +32,13 @@
     transform: rotate(360deg);
   }
 }
+
+.NFPage {
+  background-image: url('trafficbg.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Indie Flower', cursive;
+};
+

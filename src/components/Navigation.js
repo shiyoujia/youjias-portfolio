@@ -9,7 +9,7 @@ class Navigation extends React.Component {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/react">React Page</Link>
+          <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
           <Link to="/register">Register</Link>

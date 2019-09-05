@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ReactOrigin from './pages/ReactOrigin';
+import Portfolio from './pages/Portfolio';
 import Register from './pages/Register';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/react" component={ReactOrigin} />
+          <Route path="/portfolio" component={Portfolio} />
           <Route path="/register" component={Register} />
           <Route component={NotFound} />
         </Switch>

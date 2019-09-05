@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Program log
+8/17 Finish Regist Page design
+
+## Plan
+1. Fix the error in 404 page
+2. Create a empty as place holder for Home page. (done)
+3. Layout for the home page, there parts: Profile picture, Cloud header, About me
+4. Home Page will finish by 9/18/2019
+5. 
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +78,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+

@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/Portfolio.css';
 import cloud from '../cloud.png';
-import selfie from '../selfie.jpeg';
+import Intro from '../components/Intro';
 import RainDrop from '../components/RainDrop';
+import AboutMe from '../components/AboutMe';
 
-class ReactOrigin extends React.Component {
+class Portfolio extends React.Component {
   render() {
     return (
     <main className='self-page'>
@@ -27,14 +28,15 @@ class ReactOrigin extends React.Component {
       <div className='rain-drop5'>
         <RainDrop/>
       </div>
-
-      <div className='intro'>
-        <img src={selfie} alt="selfie"/>
-        <span className="about-me">AboutMe</span>
+      <div className='intro-side'>
+        <Intro/>
+      </div>
+      <div className="starter">
+        <AboutMe/>
       </div>
     </main>
     )
   }
 }
 
-export default ReactOrigin;
+export default Portfolio;

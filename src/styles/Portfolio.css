@@ -73,7 +73,7 @@
   position: relative;
 }
 
-.rain-drop-wrapper svg {
+.rain-drop-wrapper svg, .rain-drop-wrapper .hidden-content {
   width: 100%;
   position: absolute;
   bottom: -6vw;
@@ -84,6 +84,7 @@
   font-size: 4vw;
   font-family: 'VT323', monospace;
   margin: 0px 0px;
+  color: #98B6E0;
 }
 
 .starter {
@@ -92,6 +93,39 @@
   margin-left: 14vw;
 }
 
-.hello, .start-title {
+.about-me-wrapper {
+  width: 80%;
+  margin-bottom: 5vw;
+  line-height: 2.5vw;
+}
+
+.hello, .hello2{
+  font-size: 2.2vw;
+  font-family: 'NTR', sans-serif;
+  color: #757982;
+}
+
+.hello2 {
+  text-indent: 100px;
+}
+
+.start-title, .hello {
   display: inline;
+}
+
+.hint {
+  color: #98B6E0;
+  font-size: 2vw;
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+}
+
+.self-page {
+  cursor: url(../nat1026.cur), pointer;
+}
+
+.testing img {
+  position: relative;
+    height: 20vw;
+    width: auto;
 }

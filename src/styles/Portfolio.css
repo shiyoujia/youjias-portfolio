@@ -80,6 +80,10 @@
   right: 2vw;
 }
 
+.rain-drop-wrapper svg {
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
 .start-title {
   font-size: 4vw;
   font-family: 'VT323', monospace;
@@ -124,7 +128,7 @@
   cursor: url(../nat1026.cur), pointer;
 }
 
-.testing img {
+.hoverArray img {
   position: relative;
     height: 20vw;
     width: auto;

@@ -5,7 +5,9 @@ import Intro from '../components/Intro';
 import RainDrop from '../components/RainDrop';
 import AboutMe from '../components/AboutMe';
 import faceApp from '../faceApp.png';
-import pic2 from '../selfie.jpeg';
+import roboApp from '../roboFriends.png';
+import coming from '../comingSoon.png'
+
 
 class Portfolio extends React.Component {
   render() {
@@ -13,15 +15,29 @@ class Portfolio extends React.Component {
     const rainName = [
       {
         Name: 'rain-drop',
-        photoLink: faceApp
+        photoLink: faceApp,
+        webLink: 'https://face-rec-project.herokuapp.com/'
       },
       {
         Name: 'rain-drop2',
-        photoLink: pic2
+        photoLink: roboApp,
+        webLink: 'https://robo-generator.herokuapp.com/'
+      },
+      {
+        Name: 'rain-drop3',
+        photoLink: coming,
+        webLink: ''
+      },
+      {
+        Name: 'rain-drop4',
+        photoLink: coming,
+        webLink: ''
+      },
+      {
+        Name: 'rain-drop5',
+        photoLink: coming,
+        webLink: ''
       }
-      // 'rain-drop3', 
-      // 'rain-drop4', 
-      // 'rain-drop5'
     ]
 
 
@@ -32,33 +48,14 @@ class Portfolio extends React.Component {
           <header className='cloud-title'>YouJia's Portfolio</header>
         </div>
         
-      <div className='testing'>
+      <div className='hoverArray'>
         {rainName.map(drop => (
-          <div className={drop.Name}>
-            <RainDrop photo={drop.photoLink}/>
+          <div className={drop.Name} key={drop.Name}>
+            <RainDrop photo={drop.photoLink} redirectLink={drop.webLink}/>
           </div>
         ))}
         </div>
 
-
-
-        {/* <div className='rain-drop'>
-      {pictures.map(picture => (
-
-        <RainDrop photo={picture} /> ))}
-      </div>
-      <div className='rain-drop2'>
-        <RainDrop/>
-      </div>
-      <div className='rain-drop3'>
-        <RainDrop/>
-      </div>
-      <div className='rain-drop4'>
-        <RainDrop/>
-      </div>
-      <div className='rain-drop5'>
-        <RainDrop/>
-      </div> */}
         <div className='intro-side'>
           <Intro />
         </div>

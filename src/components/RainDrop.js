@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class RainDrop extends React.Component {
   constructor() {
@@ -6,7 +7,22 @@ class RainDrop extends React.Component {
     this.handleMouseHover = this.handleMouseHover.bind(this);
     this.state = {
       isHovering: false,
+      redirect: false
     };
+  }
+
+  renderRedirect() {
+    if (this.state.redirect && this.props.redirectLink) {
+      return  (<Link path='/' component={() => { 
+        window.location.href = this.props.redirectLink;
+      }}/>)
+    }
+  }
+
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
   }
 
   handleMouseHover() {
@@ -24,6 +40,7 @@ class RainDrop extends React.Component {
     const style = !this.state.isHovering ? {display: 'none'}: {};
     return (
       <div className="rain-drop-wrapper">
+        {this.renderRedirect()}
         <svg viewBox="0 0 30 42"  onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
           <path fill="transparent" stroke="#000" strokeWidth="1.0"
                 d="M15 3
@@ -33,7 +50,7 @@ class RainDrop extends React.Component {
         </svg>
         <div style={style} className="hidden-content" onMouseEnter={this.handleMouseHover}
         onMouseLeave={this.handleMouseHover}>
-          <img src={this.props.photo} alt="previews"/>
+          <img src={this.props.photo} alt="previews" onClick={this.setRedirect}/>
         </div>
       </div>
      
